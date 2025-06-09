@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes S-Class - Super Car</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Discover the ultimate luxury and innovation with the Mercedes S-Class. Learn about its features, performance, and design.">
+<meta name="keywords" content="Mercedes S-Class, luxury cars, Mercedes-Benz, high-performance cars">
+<meta name="author" content="Super Car">
+</head>
+<body>
+    <header>
+        <h1>Mercedes S-Class</h1>
+        <p>Indulge in the ultimate luxury and innovation with the Mercedes S-Class.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tp.html">About Us</a></li>
+            <li><a href="Ourmodels.html">Our Models</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="Screen-Shot-2022-07-06-at-12.46.14-PM-1024x520.png" alt="Mercedes S-Class Interior">
+                <img src="b7e48a6c27ce459f88b6e81ab2ca20d9.jpg" alt="Mercedes S-Class Side View">
+                <img src="2022-mercedes-benz-s-class-500-4wd-sedan-rear-view.png" alt="Mercedes S-Class Rear View">
+            </div>
+        </section>
+        <ul>
+            <li>🔧 Moteur : 3.0L ou 4.0L V8 – jusqu’à 503 ch (AMG S 63)</li>
+            <li>⚡ 0–100 km/h : environ 4.4 secondes</li>
+            <li>⛽ Consommation : environ 9.5 l/100km</li>
+            <li>📐 Dimensions : 5.18m x 1.95m x 1.50m</li>
+            <li>🎛️ Équipements : sièges arrière massants, conduite semi-autonome, affichage tête haute, système MBUX avancé</li>
+        </ul>
+        <section id="cta">
+            <h2>Experience the Mercedes S-Class</h2>
+            <p>Contact us today to book a test drive or learn more about this luxurious model.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </section>
+        <button id="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+    
+    <footer>
+        <p>&copy; 2025 Super Car. All rights reserved.</p>
+    </footer>
+    <script>
+        
+    window.onscroll = function () {
+        const button = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    </script>
+</body>
+
+</html>

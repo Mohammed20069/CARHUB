@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Models - Super Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-spinner" class="hidden">Loading...</div>
+    <header>
+        <h1>Our Models</h1>
+        <p>Explore our wide range of car brands and their top models.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Ourmodels.html">Our Models</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <section id="search">
+            <input type="text" id="search-bar" placeholder="Search for a car model..." oninput="filterModels()">
+        </section>
+    </nav>
+    <main>
+        <!-- Exemple pour BMW -->
+<div class="brand">
+    <img src="BMW_White_Logo.svg.asset.1670245093434.svg" alt="BMW Logo" class="brand-logo" onclick="toggleModels('bmw-models')">
+    <div id="bmw-models" class="models hidden">
+        <h3>BMW</h3>
+        <div class="brand-types">
+            <button onclick="filterBrandModels('bmw-models', 'SUV')">SUV</button>
+            <button onclick="filterBrandModels('bmw-models', 'Sedan')">Sedan</button>
+            <button onclick="filterBrandModels('bmw-models', 'Sport')">Sport</button>
+            <button onclick="filterBrandModels('bmw-models', 'all')">All</button>
+        </div>
+        <ul>
+            <li data-type="Sport"><a href="bmw-m3.html">BMW M3</a></li>
+            <li data-type="SUV"><a href="bmw-x5.html">BMW X5</a></li>
+            <li data-type="Sport"><a href="bmw-i8.html">BMW i8</a></li>
+            <li data-type="Sedan"><a href="bmw-7series.html">BMW 7 Series</a></li>
+            <li data-type="Sport"><a href="bmw-z4.html">BMW Z4</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="brand">
+    <img src="Mercedes-Benz-Logo.png" alt="Mercedes Logo" class="brand-logo" onclick="toggleModels('mercedes-models')">
+    <div id="mercedes-models" class="models hidden">
+        <h3>Mercedes-Benz</h3>
+        <span class="brand-type">Type: Sedan, SUV, Luxury</span>
+        <div class="brand-types">
+    <button onclick="filterBrandModels('mercedes-models', 'SUV')">SUV</button>
+    <button onclick="filterBrandModels('mercedes-models', 'Sedan')">Sedan</button>
+    <button onclick="filterBrandModels('mercedes-models', 'Sport')">Sport</button>
+    <button onclick="filterBrandModels('mercedes-models', 'all')">All</button>
+</div>
+       <ul>
+    <li data-type="Sedan"><a href="mercedes-c-class.html">Mercedes C-Class</a></li>
+    <li data-type="SUV"><a href="mercedes-gle.html">Mercedes GLE</a></li>
+    <li data-type="Sedan"><a href="mercedes-s-class.html">Mercedes S-Class</a></li>
+    <li data-type="Sport"><a href="mercedes-amg-gt.html">Mercedes AMG GT</a></li>
+    <li data-type="Sedan"><a href="mercedes-a-class.html">Mercedes A-Class</a></li>
+</ul>
+    </div>
+</div>
+
+<div class="brand">
+    <img src="580b585b2edbce24c47b2c18.png" alt="Audi Logo" class="brand-logo" onclick="toggleModels('audi-models')">
+    <div id="audi-models" class="models hidden">
+        <h3>Audi</h3>
+        <span class="brand-type">Type: Sedan, Sport, SUV</span>
+        <div class="brand-types">
+            <button onclick="filterBrandModels('audi-models', 'SUV')">SUV</button>
+            <button onclick="filterBrandModels('audi-models', 'Sedan')">Sedan</button>
+            <button onclick="filterBrandModels('audi-models', 'Sport')">Sport</button>
+            <button onclick="filterBrandModels('audi-models', 'all')">All</button>
+        </div>
+        <ul>
+            <li data-type="Sedan"><a href="audi-a4.html">Audi A4</a></li>
+            <li data-type="SUV"><a href="audi-q7.html">Audi Q7</a></li>
+            <li data-type="Sport"><a href="audi-r8.html">Audi R8</a></li>
+            <li data-type="Sedan"><a href="audi-a6.html">Audi A6</a></li>
+            <li data-type="Sport"><a href="audi-tt.html">Audi TT</a></li>
+        </ul>
+    </div>
+</div>
+<div class="brand">
+    <img src="Dacia-logo.png" alt="Dacia Logo" class="brand-logo" onclick="toggleModels('dacia-models')">
+    <div id="dacia-models" class="models hidden">
+        <h3>Dacia</h3>
+        <span class="brand-type">Type: SUV, Sedan</span>
+        <div class="brand-types">
+            <button onclick="filterBrandModels('dacia-models', 'SUV')">SUV</button>
+            <button onclick="filterBrandModels('dacia-models', 'Sedan')">Sedan</button>
+            <button onclick="filterBrandModels('dacia-models', 'all')">All</button>
+        </div>
+        <ul>
+            <li data-type="SUV"><a href="Dacia-Duster.html">Dacia Duster</a></li>
+            <li data-type="Sedan"><a href="Dacia-Logan.html">Dacia Logan</a></li>
+            <li data-type="SUV"><a href="Dacia-Sandero-Stepway.html">Dacia Sandero Stepway</a></li>
+            <li data-type="Sedan"><a href="Dacia-Sandero.html">Dacia Sandero</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="brand">
+    <img src="Ford-Motor-Company-Logo.png" alt="Ford Logo" class="brand-logo" onclick="toggleModels('ford-models')">
+    <div id="ford-models" class="models hidden">
+        <h3>Ford</h3>
+        <span class="brand-type">Type: SUV, Sedan, Sport</span>
+        <div class="brand-types">
+            <button onclick="filterBrandModels('ford-models', 'SUV')">SUV</button>
+            <button onclick="filterBrandModels('ford-models', 'Sedan')">Sedan</button>
+            <button onclick="filterBrandModels('ford-models', 'Sport')">Sport</button>
+            <button onclick="filterBrandModels('ford-models', 'all')">All</button>
+        </div>
+        <ul>
+            <li data-type="SUV"><a href="Ford-Kuga.html">Ford Kuga</a></li>
+            <li data-type="Sedan"><a href="Ford-Mondeo.html">Ford Mondeo</a></li>
+            <li data-type="Sport"><a href="Ford-Mustang.html">Ford Mustang</a></li>
+            <li data-type="SUV"><a href="Ford-Explorer.html">Ford Explorer</a></li>
+            <li data-type="Sedan"><a href="Ford-Focus.html">Ford Focus</a></li>
+        </ul>
+    </div>
+</div>
+        <section id="car-details" class="hidden">
+            <h2 id="car-title">Car Title</h2>
+            <img id="car-image" src="" alt="Car Image">
+            <p id="car-description">Car description goes here.</p>
+            <button onclick="hideCarDetails()">Close</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Super Car. All rights reserved.</p>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Ourmodels.html">Our Models</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <button id="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+    
+
+    <script>
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scrolling
+}
+
+        function toggleModels(id) {
+            const modelsDiv = document.getElementById(id);
+            if (modelsDiv.classList.contains('hidden')) {
+                modelsDiv.classList.remove('hidden');
+            } else {
+                modelsDiv.classList.add('hidden');
+            }
+        }
+
+        const carDetails = {
+            "BMW M3": {
+                title: "BMW M3",
+                image: "download.jpg",
+                description: "BMW M3 is a high-performance luxury car."
+            },
+            "Mercedes G63 AMG": {
+                title: "Mercedes G63 AMG",
+                image: "mercedes-c-class.jpg",
+                description: "Mercedes C-Class combines luxury and performance."
+            },
+            "Audi A4": {
+    title: "Audi A4",
+    image: "download (2).jpg",
+    description: `Audi A4 est une berline élégante combinant performance et technologie.
+🔧 Moteur : 2.0L TFSI – 201 à 261 ch
+⚡ 0–100 km/h : entre 5.3s et 6.3s
+⛽ Consommation : environ 6.5 l/100km
+📐 Dimensions : 4.76m x 1.84m x 1.43m
+🎛️ Équipements : MMI Touch, Audi Virtual Cockpit, systèmes d'aide à la conduite`
+}
+
+        };
+
+        function showCarDetails(model) {
+    const details = carDetails[model];
+    if (details) {
+        const spinner = document.getElementById("loading-spinner");
+        spinner.classList.remove("hidden");
+
+        const carImage = document.getElementById("car-image");
+        carImage.onload = () => spinner.classList.add("hidden");
+        carImage.onerror = () => spinner.classList.add("hidden");
+
+        document.getElementById("car-title").textContent = details.title;
+        carImage.src = details.image || "placeholder.jpg";
+        document.getElementById("car-description").innerHTML = details.description;
+        document.getElementById("car-details").classList.remove("hidden");
+    }
+}
+
+function filterModels() {
+    const query = document.getElementById("search-bar").value.toLowerCase();
+    const models = document.querySelectorAll(".brand ul li");
+    models.forEach((model) => {
+        if (model.textContent.toLowerCase().includes(query)) {
+            model.style.display = "block";
+        } else {
+            model.style.display = "none";
+        }
+    });
+}
+
+        function hideCarDetails() {
+            document.getElementById("car-details").classList.add("hidden");
+        } 
+        
+function filterBrandModels(brandId, type) {
+    const brandDiv = document.getElementById(brandId);
+    const models = brandDiv.querySelectorAll("ul li");
+    models.forEach((li) => {
+        if (type === "all" || li.getAttribute("data-type") === type) {
+            li.style.display = "block";
+        } else {
+            li.style.display = "none";
+        }
+    });
+}
+
+        
+    </script>
+</body>
+</html>
